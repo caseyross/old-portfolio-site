@@ -1,7 +1,16 @@
 doctype
-html
+html(ng-app)
     head
         link(href='app.css' rel='stylesheet')
+        script(src='node_modules/angular/angular.js')
     body
-        section#nameContainer
-            h1#name Casey Ross
+        section#topContainer
+            h1#name casey ross
+        hr
+        section#middleContainer
+            .project Some cool project
+            .project Another sublime project
+        section#bottomContainer
+            .details
+                .images
+                .description
