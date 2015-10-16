@@ -1,17 +1,15 @@
 doctype
-html
+html(ng-app='portfolio')
     head
         link(href='app.css' rel='stylesheet')
-        script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js')
-    body
-        section#topContainer
+    body(ng-controller='PortfolioController as portfolio')
+        section.nameContainer
             h1#name casey ross
-        section#middleContainer
-            button.project project 1
-            button.project some cool project
-            button.project another sublime project
-            button.project.selected selected project
-        section#bottomContainer
+        section.projectsContainer
+            button.project(ng-repeat='project in portfolio.projects') {{project.shortname}}
+        section.detailsContainer
             .details
                 .images
                 .description
+        script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
+        script(src='portfolio.js')
