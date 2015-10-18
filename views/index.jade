@@ -2,14 +2,17 @@ doctype
 html(ng-app='portfolio')
     head
         link(href='app.css' rel='stylesheet')
-    body(ng-controller='PortfolioController as portfolio')
+    body(ng-controller='PortfolioController as PC')
         section.nameContainer
             h1#name casey ross
         section.projectsContainer
-            button.project(ng-repeat='project in portfolio.projects') {{project.shortname}}
+            button.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.shortname }}
         section.detailsContainer
-            .details
+            div(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
                 .images
-                .description
+                .text
+                    .projectName {{ project.name }}
+                    .projectDescription {{ project.description }}
+                    
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
         script(src='portfolio.js')
