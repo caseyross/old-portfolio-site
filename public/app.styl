@@ -1,3 +1,15 @@
+red = #E92929
+purple = #B929E9
+blue = #2980E9
+
+red-l = #F08383
+purple-l = #D87CF7
+blue-l = #73AEF6
+
+red-h = #C10A0A
+purple-h = #670688
+blue-h = #064A9C
+
 *
     box-sizing border-box
 
@@ -23,7 +35,7 @@ section
     color gray
 
 .scale-container
-    margin-bottom 25px
+    margin-bottom 20px
 
     .scale
         height 2px
@@ -31,11 +43,11 @@ section
         margin 5px 10px 5px 10px
         display inline-block
         border 0
-        background linear-gradient(to right, blue, red)
+        background linear-gradient(to right, blue, purple, red)
         
     .scale-label
         display inline-block
-        font-size 1.2rem
+        font-size 1.6rem
     
 .projects-container
     background white
@@ -109,3 +121,24 @@ section
     &.selected
         background gray
         color white
+        
+    .coding
+        
+        &:hover
+        &:focus
+        &.selected
+            background blue
+        
+    .hybrid
+        
+        &:hover
+        &:focus
+        &.selected
+            background purple
+        
+    .design
+        
+        &:hover
+        &:focus
+        &.selected
+            background red
