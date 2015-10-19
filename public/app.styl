@@ -100,8 +100,13 @@ section
         
         img
             height 250px
-            padding-left 10px
+            margin-left 10px
             float right
+            cursor pointer
+            
+            &:hover
+            &:focus
+                border 1px solid gray
             
     .image-overlay
         height 100vh
@@ -151,3 +156,6 @@ section
         &:focus
         &.selected
             background red
+            
+box-shadow(radius, color)
+    box-shadow 0px 5px radius color

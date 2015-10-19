@@ -25,6 +25,7 @@ html(ng-app='portfolio')
                 a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
                 a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') Github
             .image-overlay(ng-show='PC.isImageSelected()' ng-click='PC.deselectImage()')
-                img(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fit,h_700,q_100,w_1000/{{ project.images[$index] }}')
+                img.lazyload(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' data-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fit,h_700,q_100,w_1000/{{ project.images[$index] }}')
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
+        script(src='lazysizes.min.js')
         script(src='portfolio.js')
