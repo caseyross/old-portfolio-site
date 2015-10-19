@@ -19,13 +19,13 @@ app.use stylus.middleware
         .set 'compress', true
         
 # database
-db_url = 'mongodb://localhost:27017/'
-mongodb = require 'mongodb'
-mongodb.MongoClient.connect db_url, (err, db) ->
-    if err
-        console.log 'Could not connect to MongoDB instance'
-    else
-        console.log 'Connected to MongoDB instance'
+#db_url = 'mongodb://localhost:27017/'
+#mongodb = require 'mongodb'
+#mongodb.MongoClient.connect db_url, (err, db) ->
+    #if err
+        #console.log 'Could not connect to MongoDB instance'
+    #else
+        #console.log 'Connected to MongoDB instance'
 
 # static assets path
 app.use express.static path.join __dirname, '/public'
