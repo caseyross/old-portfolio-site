@@ -12,16 +12,26 @@
         type: 'school',
         description: 'With STEMfire, educators can create these opportunities for industry volunteers to join. Together we can ignite a passion for STEM in students and enhance the education of a generation.',
         technologies: ['node.js', 'angular.js', 'mongodb', 'heroku'],
-        images: ['w_dashboard_l9me1t', 's_events_qoetlo'],
+        images: ['w_dashboard_l9me1t', 's_events_qoetlo.jpg'],
         livelink: 'http://www.stemfire.com'
       }, {
         name: 'Elevator visualization',
         github: 'http://www.github.com/stemfire/stemfire'
       }
     ];
-    this.selectedProject = void 0;
+    this.selectedProject = -1;
     this.selectProject = function(index) {
       return this.selectedProject = index;
+    };
+    this.selectedImage = -1;
+    this.selectImage = function(index) {
+      return this.selectedImage = index;
+    };
+    this.deselectImage = function() {
+      return this.selectedImage = -1;
+    };
+    this.isImageSelected = function() {
+      return this.selectedImage > -1;
     };
   });
 

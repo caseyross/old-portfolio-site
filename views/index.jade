@@ -14,7 +14,7 @@ html(ng-app='portfolio')
             button.btn.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.name }}
         section.details-container(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
             .image-container
-                img(ng-repeat='image in project.images' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fill,h_200,q_100,w_200/{{ project.images[$index] }}')
+                img(ng-repeat='image in project.images' ng-click='PC.selectImage($index)' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fill,h_200,q_100,w_200/{{ project.images[$index] }}')
             .text-container
                 .description {{ project.description }}
                 .meta
@@ -24,5 +24,7 @@ html(ng-app='portfolio')
                     .technology(ng-repeat='technology in project.technologies') {{ technology }}
                 a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
                 a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') Github
+            .image-overlay(ng-show='PC.isImageSelected()' ng-click='PC.deselectImage()')
+                img(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fit,h_700,q_100,w_1000/{{ project.images[$index] }}')
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
         script(src='portfolio.js')
