@@ -7,15 +7,16 @@
   portfolio.controller('PortfolioController', function() {
     this.projects = [
       {
-        shortname: 'sldfj sldj klsj',
-        name: 'dskfjs kl skdfk s dklsj',
+        name: 'STEMfire UI redesign',
         year: '2013',
         type: 'school',
-        description: 'skdlfjs k lojelij wilj liw ljdljf \ndklsjf  ksld jslj lksjldsj\n dklsjf ljd\n\nlskf jlksj d\n lkdjfs l\nsdfs d  ds ds ',
-        stack: ['node.js', 'angular.js', 'mongodb', 'heroku'],
-        images: ['cat.jpg']
+        description: 'With STEMfire, educators can create these opportunities for industry volunteers to join. Together we can ignite a passion for STEM in students and enhance the education of a generation.',
+        technologies: ['node.js', 'angular.js', 'mongodb', 'heroku'],
+        images: ['cat.jpg', 'w_dashboard.PNG', 'tokyo-2020.png'],
+        livelink: 'http://www.stemfire.com'
       }, {
-        shortname: 'skdjfklsj'
+        name: 'Elevator visualization',
+        github: 'http://www.github.com/stemfire/stemfire'
       }
     ];
     this.selectedProject = void 0;

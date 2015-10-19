@@ -2,17 +2,27 @@ doctype
 html(ng-app='portfolio')
     head
         link(href='app.css' rel='stylesheet')
+        // link(href='https://fonts.googleapis.com/css?family=' rel='stylesheet')
     body(ng-controller='PortfolioController as PC')
-        section.nameContainer
+        section.name-container
             h1#name casey ross
-        section.projectsContainer
-            button.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.shortname }}
-        section.detailsContainer
-            div(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
-                .images
-                .text
-                    .projectName {{ project.name }}
-                    .projectDescription {{ project.description }}
-                    
+        section.scale-container
+            .scale-label coding
+            hr.scale
+            .scale-label design
+        section.projects-container
+            button.btn.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.name }}
+        section.details-container(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
+            .image-container
+                img(ng-repeat='image in project.images' ng-src='{{ project.images[$index] }}')
+            .text-container
+                .description {{ project.description }}
+                .meta
+                    .year {{ project.year }}
+                    .type {{ project.type }}
+                .technologies
+                    .technology(ng-repeat='technology in project.technologies') {{ technology }}
+                a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
+                a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') Github
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
         script(src='portfolio.js')

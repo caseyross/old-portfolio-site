@@ -2,50 +2,103 @@
     box-sizing border-box
 
 html
-    font-family Arial
+    font-family sans-serif
     font-size 62.5%
     
 h1
     font-size 6rem
     font-weight normal
-
+    
+h2
+    font-size 3rem
+    font-weight normal
+    
 section
     width 100%
     text-align center
 
-.nameContainer
-    height 150px
+.name-container
     margin-top 100px
-    
-.projectsContainer
-    background white
-    
-.detailsContainer
-    height 650px
-    width 900px
-    margin 0 auto
+    margin-bottom 50px
+    color gray
+
+.scale-container
+    margin-bottom 25px
+
+    .scale
+        height 2px
+        width 60%
+        margin 5px 10px 5px 10px
+        display inline-block
+        border 0
+        background linear-gradient(to right, blue, red)
         
-    .imagesContainer
-        width 50%
+    .scale-label
         display inline-block
+        font-size 1.2rem
+    
+.projects-container
+    background white
             
-    .textContainer
+    .project
+        margin 10px
+    
+.details-container
+    margin-top 50px
+            
+    .text-container
         width 50%
+        padding 10px
         display inline-block
+        vertical-align top
+        text-align left
+        font-size 2rem
+        
+        .description
+            max-width 500px
+            margin-bottom 25px
+            white-space pre-wrap
             
-        .projectName
-            font-size 2.4rem
+        .meta
+            margin-bottom 10px
             
-        .projectDescription
-            font-size 1.6rem
+            .year
+                margin 5px
+                display inline-block
+                font-size 1.6rem
             
-.project
-    margin 10px
+            .type
+                margin 5px
+                display inline-block
+                font-size 1.6rem
+            
+        .technologies
+            margin-bottom 10px
+        
+            .technology
+                margin 5px
+                display inline-block
+                font-size 1.2rem
+    
+    .image-container
+        width 50%
+        padding 10px
+        display inline-block
+        vertical-align top
+        
+        img
+            height 250px
+            padding-left 10px
+            float right
+        
+.btn
     padding 10px 20px 10px 20px
     display inline-block
     font-size 2rem
     background white
-    border 2px solid black
+    border 2px solid gray
+    color gray
+    cursor pointer
     
     &:hover
     &:focus
@@ -54,5 +107,5 @@ section
         outline none
         
     &.selected
-        background black
+        background gray
         color white
