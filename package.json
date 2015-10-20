@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "coffee-script": "^1.10.0",
     "express": "^4.13.3",
     "jade": "^1.11.0",
-    "mongodb": "^2.0.45",
     "stylus": "^0.52.4"
   }
 }
