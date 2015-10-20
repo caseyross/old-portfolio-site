@@ -16,6 +16,10 @@ blue-h = #064A9C
 html
     font-family sans-serif
     font-size 62.5%
+        
+    @media screen and (min-resolution: 130dpi)
+        font-size 125%
+        
     
 h1
     font-size 5rem
@@ -72,9 +76,14 @@ nav
         text-align left
         font-size 2rem
         
-        .description
-            max-width 500px
+        .title
             margin-bottom 25px
+            
+        .commentary
+            max-width 700px
+            margin-left 5px
+            margin-bottom 15px
+            font-size 1.6rem
             white-space pre-wrap
             
         .meta
@@ -91,6 +100,7 @@ nav
                 font-size 1.6rem
             
         .technologies
+            // margin-left -5px
             margin-bottom 10px
         
             .technology
@@ -107,16 +117,18 @@ nav
         img
             height 250px
             margin-left 10px
+            margin-bottom 10px
             float right
+            border 1px solid gray
             cursor pointer
             
             &:hover
             &:focus
-                border 1px solid gray
+                border 1px solid black
             
     .image-overlay
         height 100vh
-        position absolute
+        position fixed
         top 0
         left 0
         right 0
