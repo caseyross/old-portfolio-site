@@ -1,15 +1,3 @@
-red = #E92929
-purple = #B929E9
-blue = #2980E9
-
-red-l = #F08383
-purple-l = #D87CF7
-blue-l = #73AEF6
-
-red-h = #C10A0A
-purple-h = #670688
-blue-h = #064A9C
-
 *
     box-sizing border-box
 
@@ -19,7 +7,6 @@ html
         
     @media screen and (min-resolution: 130dpi)
         font-size 125%
-        
     
 h1
     font-size 5rem
@@ -45,6 +32,7 @@ nav
         &:hover
         &:focus
             color black
+            font-weight 700
             
         @media screen and (min-resolution: 130dpi)
             margin 20px
@@ -53,21 +41,6 @@ nav
 .name-container
     margin-top 50px
     color gray
-
-// .scale-container
-//     margin-bottom 20px
-
-//     .scale
-//         height 2px
-//         width 60%
-//         margin 5px 10px 5px 10px
-//         display inline-block
-//         border 0
-//         background linear-gradient(to right, blue, purple, red)
-        
-//     .scale-label
-//         display inline-block
-//         font-size 1.6rem
 
 .projects-container
     margin-top 50px
@@ -80,6 +53,9 @@ nav
         font-size 1.6rem
         font-weight 700
         
+        @media screen and (min-resolution: 130dpi)
+            display block
+            
     .project
         margin 10px
     
@@ -101,7 +77,7 @@ nav
             max-width 700px
             margin-left 5px
             margin-bottom 15px
-            font-size 1.6rem
+            font-size 1.4rem
             white-space pre-wrap
             
         .meta
@@ -118,13 +94,15 @@ nav
                 font-size 1.6rem
             
         .technologies
-            // margin-left -5px
             margin-bottom 10px
         
             .technology
                 margin 5px
                 display inline-block
                 font-size 1.2rem
+                
+                @media screen and (min-resolution: 130dpi)
+                    margin 5px 10px
     
     .image-container
         width 50%
@@ -172,26 +150,6 @@ nav
         background gray
         color white
         
-    .coding
-        
-        &:hover
-        &:focus
-        &.selected
-            background blue
-        
-    .hybrid
-        
-        &:hover
-        &:focus
-        &.selected
-            background purple
-        
-    .design
-        
-        &:hover
-        &:focus
-        &.selected
-            background red
-            
-box-shadow(radius, color)
-    box-shadow 0px 5px radius color
+    @media screen and (min-resolution: 130dpi)
+        font-size 2.4rem
+        border 4px solid gray
