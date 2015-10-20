@@ -6,12 +6,11 @@ html(ng-app='portfolio')
     body(ng-controller='PortfolioController as PC')
         section.name-container
             h1#name casey ross
-        section.scale-container
-            .scale-label coding
-            hr.scale
-            .scale-label design
         section.projects-container
-            button.btn.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.name }}
+            .label coding
+            nav
+                button.btn.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.name }}
+            .label design
         section.details-container(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
             .image-container
                 img(ng-repeat='image in project.images' ng-click='PC.selectImage($index)' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fill,h_200,q_100,w_200/{{ project.images[$index] }}')
