@@ -4,6 +4,11 @@ html(ng-app='portfolio')
         link(href='app.css' rel='stylesheet')
         // link(href='https://fonts.googleapis.com/css?family=' rel='stylesheet')
     body(ng-controller='PortfolioController as PC')
+        section.contact-link-container
+            a.contact-link(href='mailto:caseyros@gmail.com' target='_blank') email
+            a.contact-link(href='https://www.linkedin.com/in/caseyros' target='_blank') linkedin
+            a.contact-link(href='https://www.github.com/caseyross' target='_blank') github
+            a.contact-link(href='https://docs.google.com/document/d/1EpSt1S51QeIOzbdcOEqhx6WV5F1KWu7Z5BhKSpUseBU/edit?usp=sharing' target='_blank') resume
         section.name-container
             h1#name casey ross
         section.projects-container

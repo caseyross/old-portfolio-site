@@ -32,9 +32,26 @@ section
 nav
     display inline
 
+.contact-link-container
+    height 50px
+    
+    .contact-link
+        margin 5px
+        float left
+        font-size 1.2rem
+        color gray
+        text-decoration none
+        
+        &:hover
+        &:focus
+            color black
+            
+        @media screen and (min-resolution: 130dpi)
+            margin 20px
+            font-size 2rem
+
 .name-container
-    margin-top 100px
-    margin-bottom 50px
+    margin-top 50px
     color gray
 
 // .scale-container
@@ -51,8 +68,9 @@ nav
 //     .scale-label
 //         display inline-block
 //         font-size 1.6rem
-    
+
 .projects-container
+    margin-top 50px
     background white
     
     .label
