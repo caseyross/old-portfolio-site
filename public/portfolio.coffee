@@ -14,7 +14,7 @@ portfolio.controller 'PortfolioController', ->
                 \n
                 \nWe can connect propositions with \"and\", \"or\", and other logical operators to make more interesting statements:
                 \n
-                \n\"Either it\'s raining or my cat is purple
+                \n\"Either it\'s raining or my cat is purple\"
                 \n
                 \nIf we have a few statements like this, we can try to prove a conclusion using the given statements.
                 \nFor example, the conclusion that:
@@ -23,7 +23,7 @@ portfolio.controller 'PortfolioController', ->
                 \n
                 \nResolution is a clever technique to automatically construct these proofs.'
             technologies: ['java']
-            images: []
+            images: ['proofdemo_mqx3w6']
             github: 'http://www.github.com/caseyross/prover'
         }
         {
