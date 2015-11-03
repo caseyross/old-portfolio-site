@@ -39,8 +39,8 @@ portfolio.controller 'PortfolioController', ->
             name: 'Portfolio'
             year: '2015'
             type: 'personal'
-            title: 'Personal website'
-            technologies: ['node.js', 'express', 'angular.js', 'adobe illustrator']
+            title: 'This website'
+            technologies: ['node.js', 'express', 'angular.js', 'heroku', 'adobe illustrator']
             images: ['ps_k0pccb', 'ps2_cu56fh', 'ps3_xvuptj', 'ps4_touof9', 'portfolio_unddhw.png']
             github: 'http://www.github.com/caseyross/portfolio'
         }

@@ -21,6 +21,7 @@ html(ng-app='portfolio')
             .text-container
                 .title {{ project.title }}
                 .commentary {{ project.commentary }}
+                hr
                 .technologies
                     .technology(ng-repeat='technology in project.technologies') {{ technology }}
                 a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
