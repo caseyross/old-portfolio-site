@@ -54,10 +54,14 @@ nav
         font-weight 700
         
         @media screen and (min-resolution: 130dpi)
-            display block
+            display none
             
     .project
         margin 10px
+        
+        @media screen and (min-resolution: 130dpi)
+            width 100%
+            padding 20px
     
 .details-container
     margin-top 50px
@@ -130,6 +134,10 @@ nav
         right 0
         padding-top 50px
         background rgba(0, 0, 0, .8)
+        
+        // TODO: decide where to show picture on mobile
+        // @media screen and (min-resolution 130dpi)
+        //     padding-top 500px
         
 .btn
     padding 10px 20px
