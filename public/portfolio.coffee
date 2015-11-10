@@ -6,16 +6,18 @@ portfolio.controller 'PortfolioController', ->
             name: 'Volunteer platform redesign'
             year: '2015'
             type: 'school / work'
+            skillset: 'both'
             title: 'UX evaluation and redesign for stemfire.com'
             commentary: ''
             technologies: ['ruby on rails', 'bootstrap', 'heroku', 'postgresql', 'elasticsearch']
-            images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
+            images: ['event_info_lejcs5', 's_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
             livelink: 'http://www.stemfire.com'
         }
         {
             name: 'Elevator visualization'
             year: '2012'
             type: 'school'
+            skillset: 'both'
             title: 'Simulation and visualization of elevator movement'
             commentary: ''
             technologies: ['java', 'swing']
@@ -27,6 +29,7 @@ portfolio.controller 'PortfolioController', ->
             year: '2015'
             type: 'personal'
             title: 'This page'
+            skillset: 'both'
             commentary: 'Primary goal: create a museum-like space to display projects.'
             technologies: ['node.js', 'express', 'angular.js', 'coffeescript', 'jade', 'heroku', 'adobe illustrator']
             images: ['ps_k0pccb', 'ps2_cu56fh', 'ps3_xvuptj', 'ps4_touof9', 'portfolio_unddhw.png']
@@ -36,6 +39,7 @@ portfolio.controller 'PortfolioController', ->
             name: 'T-shirt design'
             year: '2013'
             type: 'personal'
+            skillset: 'design'
             title: 'T-shirt design for my university\'s honors program'
             commentary: 'The somewhat inscrutable motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape).
             \n
@@ -47,6 +51,7 @@ portfolio.controller 'PortfolioController', ->
             name: 'Theorem prover'
             year: '2013'
             type: 'school'
+            skillset: 'code'
             title: 'Resolution theorem prover for propositional logic'
             commentary: 'Propositional logic consists of statements that are either true or false, such as:
                 \n
@@ -71,6 +76,7 @@ portfolio.controller 'PortfolioController', ->
             #name: 'Imageboard'
             #year: '2015'
             #type: 'personal'
+            #skillset: 'both'
             #title: ''
             #technologies: ['meteor', 'coffeescript', 'jade', 'mongodb']
             #images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
@@ -81,6 +87,7 @@ portfolio.controller 'PortfolioController', ->
             name: 'Olympics logo'
             year: '2015'
             type: 'personal'
+            skillset: 'design'
             title: 'Logo for the 2020 Olympics'
             commentary: 'I tried to evoke three ideas with the shapes and arrangement of this logo:
             \n

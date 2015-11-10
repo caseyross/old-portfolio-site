@@ -11,11 +11,21 @@ html(ng-app='portfolio')
         section.name-container
             h1#name casey ross
         section.projects-container
+            // .filter
+            //     label
+            //         input(type='checkbox')
+            //         | just code
+            //     label
+            //         input(type='checkbox')
+            //         | just design
+            //     label
+            //         input(type='checkbox')
+            //         | both
             nav
                 button.btn.project(ng-repeat='project in PC.projects' ng-click='PC.selectProject($index)' ng-class='{ selected: PC.selectedProject === $index }') {{ project.name }}
         section.details-container(ng-repeat='project in PC.projects' ng-show='PC.selectedProject === $index')
             .image-container
-                img(ng-repeat='image in project.images' ng-click='PC.selectImage($index)' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fill,h_200,w_200/{{ project.images[$index] }}')
+                img(ng-repeat='image in project.images' ng-click='PC.selectImage($index)' ng-src='https://res.cloudinary.com/dp7mdyryy/image/upload/f_auto,q_50,c_fill,h_200,w_200/{{ project.images[$index] }}')
             .text-container
                 .title {{ project.title }}
                 .commentary {{ project.commentary }}
@@ -25,7 +35,7 @@ html(ng-app='portfolio')
                 a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
                 a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') Github
             .image-overlay(ng-show='PC.isImageSelected()' ng-click='PC.deselectImage()')
-                img.lazyload(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' data-src='https://res.cloudinary.com/dp7mdyryy/image/upload/c_fit,h_700,w_1000/{{ project.images[$index] }}')
+                img.lazyload(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' data-src='https://res.cloudinary.com/dp7mdyryy/image/upload/f_auto,q_50,c_fit,h_700,w_1000/{{ project.images[$index] }}')
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
         script(src='lazysizes.min.js')
         script(src='portfolio.js')
