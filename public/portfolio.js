@@ -7,14 +7,14 @@
   portfolio.controller('PortfolioController', function() {
     this.projects = [
       {
-        name: 'Theorem prover',
-        year: '2013',
-        type: 'school',
-        title: 'Resolution theorem prover for propositional logic',
-        commentary: 'Propositional logic consists of statements that are either true or false, such as: \n \n\"The sky is blue\" \n\"The previous proposition was false\" \n \nWe can connect propositions with \"and\", \"or\", and other logical operators to make more interesting statements: \n \n\"Either it\'s raining or my cat is purple\" \n \nIf we have a few statements like this, we can try to prove a conclusion using the given statements. \nFor example, the conclusion that: \n \n\"My cat is purple\" \n \nResolution is a clever technique to automatically construct these proofs.',
-        technologies: ['java'],
-        images: ['proofdemo_mqx3w6'],
-        github: 'http://www.github.com/caseyross/prover'
+        name: 'Volunteer platform redesign',
+        year: '2015',
+        type: 'school / work',
+        title: 'UX evaluation and redesign for stemfire.com',
+        commentary: '',
+        technologies: ['ruby on rails', 'bootstrap', 'heroku', 'postgresql', 'elasticsearch'],
+        images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq'],
+        livelink: 'http://www.stemfire.com'
       }, {
         name: 'Elevator visualization',
         year: '2012',
@@ -29,19 +29,10 @@
         year: '2015',
         type: 'personal',
         title: 'This page',
-        commentary: 'My primary goal here was to create a museum-like environment to display projects.',
+        commentary: 'Primary goal: create a museum-like space to display projects.',
         technologies: ['node.js', 'express', 'angular.js', 'coffeescript', 'jade', 'heroku', 'adobe illustrator'],
         images: ['ps_k0pccb', 'ps2_cu56fh', 'ps3_xvuptj', 'ps4_touof9', 'portfolio_unddhw.png'],
         github: 'http://www.github.com/caseyross/portfolio'
-      }, {
-        name: 'Volunteer platform redesign',
-        year: '2015',
-        type: 'school / work',
-        title: 'UX evaluation and redesign for stemfire.com',
-        commentary: '',
-        technologies: ['ruby on rails', 'bootstrap', 'heroku', 'postgresql', 'elasticsearch'],
-        images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq'],
-        livelink: 'http://www.stemfire.com'
       }, {
         name: 'T-shirt design',
         year: '2013',
@@ -50,6 +41,15 @@
         commentary: 'The somewhat inscrutable motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape). \n \nWhile the figure was probably overly abstract, I think the colors turned out well.',
         technologies: ['adobe illustrator'],
         images: ['CV_TShirt_Contest_Design_dik2oq.png']
+      }, {
+        name: 'Theorem prover',
+        year: '2013',
+        type: 'school',
+        title: 'Resolution theorem prover for propositional logic',
+        commentary: 'Propositional logic consists of statements that are either true or false, such as: \n \n\"The sky is blue\" \n\"The previous proposition was false\" \n \nWe can connect propositions with \"and\", \"or\", and other logical operators to make more interesting statements: \n \n\"Either it\'s raining or my cat is purple\" \n \nIf we have a few statements like this, we can try to prove a conclusion using the given statements. \nFor example, the conclusion that: \n \n\"My cat is purple\" \n \nResolution is a clever technique to automatically construct these proofs.',
+        technologies: ['java'],
+        images: ['proofdemo_mqx3w6'],
+        github: 'http://www.github.com/caseyross/prover'
       }, {
         name: 'Olympics logo',
         year: '2015',
