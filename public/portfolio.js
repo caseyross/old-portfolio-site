@@ -17,6 +17,16 @@
         images: ['event_info_lejcs5', 's_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_event_oyymtb', 's_event_jlregq'],
         livelink: 'http://www.stemfire.com'
       }, {
+        name: 'Personal website',
+        year: '2015',
+        type: 'personal',
+        title: 'Personal/portfolio website',
+        skillset: 'both',
+        commentary: '',
+        technologies: ['node.js', 'express', 'angular.js', 'coffeescript', 'jade', 'heroku', 'adobe illustrator'],
+        images: ['ps_k0pccb', 'ps2_cu56fh', 'ps4_touof9', 'portfolio_unddhw.png'],
+        github: 'http://www.github.com/caseyross/portfolio'
+      }, {
         name: 'Elevator visualization',
         year: '2012',
         type: 'school',
@@ -27,26 +37,16 @@
         images: ['elevator3_jfhjsg', 'elevator4_btvqol', 'elevator2_st2cox'],
         github: 'http://www.github.com/caseyross/elevator-sim'
       }, {
-        name: 'Personal website',
-        year: '2015',
-        type: 'personal',
-        title: 'caseyross.me',
-        skillset: 'both',
-        commentary: '',
-        technologies: ['node.js', 'express', 'angular.js', 'coffeescript', 'jade', 'heroku', 'adobe illustrator'],
-        images: ['ps_k0pccb', 'ps2_cu56fh', 'ps4_touof9', 'portfolio_unddhw.png'],
-        github: 'http://www.github.com/caseyross/portfolio'
-      }, {
         name: 'T-shirt design',
         year: '2013',
         type: 'personal',
         skillset: 'design',
-        title: 'T-shirt design for my university\'s honors program',
-        commentary: 'The motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape). \n \nWhile the figure was probably overly abstract, I think the colors turned out well.',
+        title: 'Logo for my university\'s honors program',
+        commentary: 'The motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape). \n \nWhile the figure was probably too abstract, I think the colors turned out well.',
         technologies: ['adobe illustrator'],
         images: ['CV_TShirt_Contest_Design_dik2oq.png']
       }, {
-        name: 'Olympics logo',
+        name: 'Olympic logo',
         year: '2015',
         type: 'personal',
         skillset: 'design',

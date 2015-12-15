@@ -2,14 +2,15 @@ doctype
 html(ng-app='portfolio')
     head
         link(href='app.css' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet')
     body(ng-controller='PortfolioController as PC')
         section.contact-link-container
-            a.contact-link(href='mailto:caseyros@gmail.com' target='_blank') email
-            a.contact-link(href='https://www.linkedin.com/in/caseyros' target='_blank') linkedin
-            a.contact-link(href='https://www.github.com/caseyross' target='_blank') github
-            a.contact-link(href='https://docs.google.com/document/d/1EpSt1S51QeIOzbdcOEqhx6WV5F1KWu7Z5BhKSpUseBU/edit?usp=sharing' target='_blank') resume
+            a(href='mailto:caseyros@gmail.com' target='_blank') email
+            a(href='https://www.linkedin.com/in/caseyros' target='_blank') linkedin
+            a(href='https://www.github.com/caseyross' target='_blank') github
+            a(href='https://docs.google.com/document/d/1EpSt1S51QeIOzbdcOEqhx6WV5F1KWu7Z5BhKSpUseBU/edit?usp=sharing' target='_blank') resume
         section.name-container
-            h1#name casey ross
+            h1#name Casey Ross
         section.projects-container
             // .filter
             //     label
@@ -29,11 +30,11 @@ html(ng-app='portfolio')
             .text-container
                 .title {{ project.title }}
                 .commentary {{ project.commentary }}
-                hr
+                // hr
                 .technologies
                     .technology(ng-repeat='technology in project.technologies') {{ technology }}
-                a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') Live site
-                a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') Github
+                a.btn(ng-href='{{ project.livelink }}' ng-show='project.livelink' target='_blank') view live site
+                a.btn(ng-href='{{ project.github }}' ng-show='project.github' target='_blank') view on github
             .image-overlay(ng-show='PC.isImageSelected()' ng-click='PC.deselectImage()')
                 img.lazyload(ng-repeat='image in project.images' ng-show='PC.selectedImage === $index' data-src='https://res.cloudinary.com/dp7mdyryy/image/upload/f_auto,q_50,c_fit,h_700,w_1000/{{ project.images[$index] }}')
         script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js')
