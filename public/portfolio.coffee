@@ -10,7 +10,7 @@ portfolio.controller 'PortfolioController', ->
             title: 'UX evaluation and redesign for stemfire.com'
             commentary: ''
             technologies: ['ruby on rails', 'bootstrap', 'heroku', 'postgresql', 'elasticsearch']
-            images: ['event_info_lejcs5', 's_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
+            images: ['event_info_lejcs5', 's_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_event_oyymtb', 's_event_jlregq']
             livelink: 'http://www.stemfire.com'
         }
         {
@@ -21,18 +21,18 @@ portfolio.controller 'PortfolioController', ->
             title: 'Simulation and visualization of elevator movement'
             commentary: ''
             technologies: ['java', 'swing']
-            images: ['elevator3_jfhjsg', 'elevator4_btvqol', 'elevator2_st2cox', 'elevator1_bukyyn', 'elevator5_y5qm8t', 'elevator6_tty38t']
+            images: ['elevator3_jfhjsg', 'elevator4_btvqol', 'elevator2_st2cox']
             github: 'http://www.github.com/caseyross/elevator-sim'
         }
         {
             name: 'Personal website'
             year: '2015'
             type: 'personal'
-            title: 'This page'
+            title: 'caseyross.me'
             skillset: 'both'
-            commentary: 'Primary goal: create a museum-like space to display projects.'
+            commentary: ''
             technologies: ['node.js', 'express', 'angular.js', 'coffeescript', 'jade', 'heroku', 'adobe illustrator']
-            images: ['ps_k0pccb', 'ps2_cu56fh', 'ps3_xvuptj', 'ps4_touof9', 'portfolio_unddhw.png']
+            images: ['ps_k0pccb', 'ps2_cu56fh', 'ps4_touof9', 'portfolio_unddhw.png']
             github: 'http://www.github.com/caseyross/portfolio'
         }
         {
@@ -41,48 +41,48 @@ portfolio.controller 'PortfolioController', ->
             type: 'personal'
             skillset: 'design'
             title: 'T-shirt design for my university\'s honors program'
-            commentary: 'The somewhat inscrutable motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape).
+            commentary: 'The motif here is meant to be a stylized top-down view of four people in a group. Since the name of the honors program is inspired by the classical idea of the \'fifth element\', I wanted to communicate how four objects can come together to create a fifth (here, the central star shape).
             \n
             \nWhile the figure was probably overly abstract, I think the colors turned out well.'
             technologies: ['adobe illustrator']
             images: ['CV_TShirt_Contest_Design_dik2oq.png']
         }
-        {
-            name: 'Theorem prover'
-            year: '2013'
-            type: 'school'
-            skillset: 'code'
-            title: 'Resolution theorem prover for propositional logic'
-            commentary: 'Propositional logic consists of statements that are either true or false, such as:
-                \n
-                \n\"The sky is blue\"
-                \n\"The previous proposition was false\"
-                \n
-                \nWe can connect propositions with \"and\", \"or\", and other logical operators to make more interesting statements:
-                \n
-                \n\"Either it\'s raining or my cat is purple\"
-                \n
-                \nIf we have a few statements like this, we can try to prove a conclusion using the given statements.
-                \nFor example, the conclusion that:
-                \n
-                \n\"My cat is purple\"
-                \n
-                \nResolution is a clever technique to automatically construct these proofs.'
-            technologies: ['java']
-            images: ['proofdemo_mqx3w6']
-            github: 'http://www.github.com/caseyross/prover'
-        }
-        #{
-            #name: 'Imageboard'
-            #year: '2015'
-            #type: 'personal'
-            #skillset: 'both'
-            #title: ''
-            #technologies: ['meteor', 'coffeescript', 'jade', 'mongodb']
-            #images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
-            #livelink: 'http://text-board.meteor.com'
-            #github: 'http://www.github.com/caseyross/text-board'
-        #}
+        # {
+        #     name: 'Theorem prover'
+        #     year: '2013'
+        #     type: 'school'
+        #     skillset: 'code'
+        #     title: 'Resolution theorem prover for propositional logic'
+        #     commentary: 'Propositional logic consists of statements that are either true or false, such as:
+        #         \n
+        #         \n\"The sky is blue\"
+        #         \n\"The previous proposition was false\"
+        #         \n
+        #         \nWe can connect propositions with \"and\", \"or\", and other logical operators to make more interesting statements:
+        #         \n
+        #         \n\"Either it\'s raining or my cat is purple\"
+        #         \n
+        #         \nIf we have a few statements like this, we can try to prove a conclusion using the given statements.
+        #         \nFor example, the conclusion that:
+        #         \n
+        #         \n\"My cat is purple\"
+        #         \n
+        #         \nResolution is a clever technique to automatically construct these proofs.'
+        #     technologies: ['java']
+        #     images: ['']
+        #     github: 'http://www.github.com/caseyross/prover'
+        # }
+        # {
+        #     name: 'Imageboard'
+        #     year: '2015'
+        #     type: 'personal'
+        #     skillset: 'both'
+        #     title: ''
+        #     technologies: ['meteor', 'coffeescript', 'jade', 'mongodb']
+        #     images: ['s_events_qoetlo.jpg', 'sf_sketch_oabn0i', 'w_dashboard_l9me1t', 'w_event_oyymtb', 's_event_jlregq']
+        #     livelink: 'http://text-board.meteor.com'
+        #     github: 'http://www.github.com/caseyross/text-board'
+        # }
         {
             name: 'Olympics logo'
             year: '2015'
